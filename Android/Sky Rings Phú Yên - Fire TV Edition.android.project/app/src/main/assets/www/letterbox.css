@@ -1,0 +1,49 @@
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+
+    /* Fallback so there is never a white area */
+    background-color: #53d5fd !important;
+}
+
+/* Full-screen blurred background behind the Construct game */
+body::before {
+    content: "";
+    position: fixed;
+
+    /*
+       Extend outside the physical screen.
+       This prevents blur from producing transparent edges.
+    */
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+
+    background-image: url("bg_game_wide.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Blur the background extension */
+    filter: blur(18px);
+
+    /*
+       Slight enlargement prevents blur edges from becoming visible.
+    */
+    transform: scale(1.05);
+    transform-origin: center center;
+
+    pointer-events: none;
+}
+
+/*
+   Keep Construct's canvas/content above the blurred background.
+*/
+canvas {
+    position: relative;
+}

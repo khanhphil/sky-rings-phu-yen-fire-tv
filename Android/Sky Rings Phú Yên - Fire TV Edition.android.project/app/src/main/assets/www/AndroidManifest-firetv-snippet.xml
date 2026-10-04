@@ -1,0 +1,2 @@
+<!-- Add this as a direct child of <manifest> in the exported Android Studio app manifest. -->
+<uses-feature android:name="android.hardware.touchscreen" android:required="false" />

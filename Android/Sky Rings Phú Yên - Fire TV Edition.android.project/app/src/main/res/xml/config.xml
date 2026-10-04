@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="1010000" id="com.tnkgames.skyringsphuyen.firetv" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="AdMob">
+        <param name="android-package" value="admob.plus.cordova.AdMob" />
+    </feature>
+    <feature name="Consent">
+        <param name="android-package" value="cordova.plugin.consent.Consent" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="AndroidFullScreen">
+        <param name="android-package" value="com.mesmotronic.plugins.FullScreenPlugin" />
+    </feature>
+    <feature name="AndroidNotch">
+        <param name="android-package" value="com.tobspr.androidnotch.AndroidNotch" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Sky Rings Phú Yên - Fire TV Edition</name>
+    <description>Fire TV Edition - remote-first big-screen flying adventure through Phú Yên</description>
+    <author email="skyringsphuyen@gmail.com" href="https://sites.google.com/view/sky-rings-phu-yen-privacy/trang-ch%E1%BB%A7">TNK Games</author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="blob:*" />
+    <icon density="xxxhdpi" height="512" src="www/icons/icon-512.png" width="512" />
+    <icon height="256" src="www/icons/icon-256.png" width="256" />
+    <icon density="xhdpi" height="128" src="www/icons/icon-128.png" width="128" />
+    <icon density="mdpi" height="64" src="www/icons/icon-64.png" width="64" />
+    <icon height="32" src="www/icons/icon-32.png" width="32" />
+    <icon height="16" src="www/icons/icon-16.png" width="16" />
+    <access origin="*" />
+    <edit-config file="app/src/main/res/values/strings.xml" mode="merge" target="/resources/string[@name='app_name']">
+        <string>Sky Rings Phú Yên - Fire TV Edition</string>
+    </edit-config>
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="orientation" value="landscape" />
+    <preference name="fullscreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="LoadUrlTimeoutValue" value="120000" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="DoCocoaPodsUpdate" value="true" />
+    <preference name="InspectableWebview" value="true" />
+    <preference name="android-minSdkVersion" value="24" />
+    <preference name="android-targetSdkVersion" value="36" />
+    <preference name="AndroidEdgeToEdge" value="true" />
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="www/icons/loading-logo.png" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#ffffff" />
+</widget>
