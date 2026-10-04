@@ -33,3 +33,15 @@ google-services.json
 
 # Android Profiling
 *.hprof
+# Private signing / local machine files
+*.jks
+*.keystore
+local.properties
+key.properties
+*.pem
+*.p12
+
+# Do not upload generated release/build files
+**/build/
+**/release/
+.gradle/
